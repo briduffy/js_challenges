@@ -45,8 +45,6 @@ function bubbleSort(array){
 
 console.log(bubbleSort(array.slice()))
 //Returns [2, 3, 11, 26, 44, 88, 99, 123, 789, 1105]
-//In the example provided on Canvas, the expected output was in descending order.
-//StackOverflow helped me big time with this, but, my output is in ascending order.
 
 //Condtional Statement -- Largest of 5 Numbers with an Alert Box
 //
