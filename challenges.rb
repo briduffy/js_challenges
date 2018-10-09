@@ -50,3 +50,20 @@
 #
 #puts sumArray(array)
 #Returns 495
+
+# FizzBuzz
+#
+#def fizzBuzz
+#  (1..50).each do |x|
+#    array = []
+#    array << x 
+#    array << "Buzz" if x % 3 == 0
+#    array << "Fizz" if x % 5 == 0 
+#    array << "FizzBuzz" if x % 15 == 0
+#    puts array
+#  end
+#end
+#
+#fizzBuzz
+# Returns 1, 2, 3, Buzz, 4, 5, Fizz, 6, Buzz, 7, 8, 9, Buzz, 10, Fizz, 11, 12, Buzz,
+#13, 14, 15, Buzz, Fizz, FizzBuzz, 16, 17, 18, Buzz, 19, 20, Fizz...etc.
