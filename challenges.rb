@@ -40,6 +40,7 @@
 #puts bubble_sort(array)
 #Returns [11, 22, 33, 44, 55, 66, 77, 88, 99]
 
+
 # Sum of an Array
 #
 #array = [11, 22, 33, 44, 55, 66, 77, 88, 99]
@@ -50,6 +51,7 @@
 #
 #puts sumArray(array)
 #Returns 495
+
 
 # FizzBuzz
 #
@@ -68,15 +70,43 @@
 # Returns 1, 2, 3, Buzz, 4, 5, Fizz, 6, Buzz, 7, 8, 9, Buzz, 10, Fizz, 11, 12, Buzz,
 #13, 14, 15, Buzz, Fizz, FizzBuzz, 16, 17, 18, Buzz, 19, 20, Fizz...etc.
 
+
 # Average an Array
 #
-array = [11, 22, 33, 44, 55, 66, 77, 88, 99]
+#array = [11, 22, 33, 44, 55, 66, 77, 88, 99]
+#
+#def averageArray(array)
+#  total = array.sum
+#  puts "The sum is #{total}."
+#  average = total / array.length
+#  puts "The average is #{average}."
+#end
+#
+#puts averageArray(array)
+# Returns "The sum is 495. The average is 55."
 
-def averageArray(array)
-  total = array.sum
-  puts "The sum is #{total}."
-  average = total / array.length
-  puts "The average is #{average}."
-end
 
-puts averageArray(array)
+#Palindrome
+#
+#palindrome tester
+#@letters = []
+#@test = []
+
+#def test
+#  puts "Input a string to see if it is a palindrome"
+#  @user_input = gets.strip.downcase.gsub(" ", "") 
+#  @user_input.each_char { |c|  @letters << c }
+#  reverse
+#end
+
+#def reverse
+#  @letters.each {|l| @test.unshift(l) }
+#  if @letters == @test
+#    puts "#{@user_input} is a palindrome."
+#  else 
+#    puts "#{@user_input} is not a palindrome."
+#  end
+#end
+#
+#test
+#Returns "racecar is a palindrome. apple is not a palindrome."
