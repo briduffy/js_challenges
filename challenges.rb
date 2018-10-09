@@ -36,6 +36,17 @@
 #  end
 #  array
 #end
-
-puts bubble_sort(array)
+#
+#puts bubble_sort(array)
 #Returns [11, 22, 33, 44, 55, 66, 77, 88, 99]
+
+# Sum of an Array
+#
+#array = [11, 22, 33, 44, 55, 66, 77, 88, 99]
+#def sumArray(array)
+#  sum = array.sum
+#  puts sum
+#end
+#
+#puts sumArray(array)
+#Returns 495
