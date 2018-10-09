@@ -67,3 +67,16 @@
 #fizzBuzz
 # Returns 1, 2, 3, Buzz, 4, 5, Fizz, 6, Buzz, 7, 8, 9, Buzz, 10, Fizz, 11, 12, Buzz,
 #13, 14, 15, Buzz, Fizz, FizzBuzz, 16, 17, 18, Buzz, 19, 20, Fizz...etc.
+
+# Average an Array
+#
+array = [11, 22, 33, 44, 55, 66, 77, 88, 99]
+
+def averageArray(array)
+  total = array.sum
+  puts "The sum is #{total}."
+  average = total / array.length
+  puts "The average is #{average}."
+end
+
+puts averageArray(array)
