@@ -110,3 +110,16 @@
 #
 #test
 #Returns "racecar is a palindrome. apple is not a palindrome."
+
+
+#Longest Word in an Array
+#
+#sentence = 'Brianne is procrastinating going to the gym.'
+#def LongestWord(sentence)
+#  longest = sentence.strip.split(" ")
+#  longest.sort_by!(&:length).reverse!
+#  longest[0]
+#end
+#
+#puts LongestWord(sentence)
+#Returns "procrastinating"
