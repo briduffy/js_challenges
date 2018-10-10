@@ -112,7 +112,7 @@
 #Returns "racecar is a palindrome. apple is not a palindrome."
 
 
-#Longest Word in an Array
+#Longest Word in an string
 #
 #sentence = 'Brianne is procrastinating going to the gym.'
 #def LongestWord(sentence)
@@ -123,3 +123,20 @@
 #
 #puts LongestWord(sentence)
 #Returns "procrastinating"
+
+
+#Prime Number Checker
+#
+def primeNumber
+  puts `clear`
+  puts 'PRIME NUMBER CHECKER: Enter a number!'
+  number = gets.strip.to_i
+  prime = 0
+  (2...number).each { |i| number % i == 0 ? break : prime = 1 }
+  if number == 1
+    puts "#{number} is a prime number."
+  else
+    puts "#{number} is not prime."
+  end
+end
+primeNumber
