@@ -127,13 +127,14 @@
 
 #Prime Number Checker
 #
+
+require 'prime'
+
 def primeNumber
   puts `clear`
   puts 'PRIME NUMBER CHECKER: Enter a number!'
   number = gets.strip.to_i
-  prime = 0
-  (2...number).each { |i| number % i == 0 ? break : prime = 1 }
-  if number == 1
+  if Prime.prime?(number)
     puts "#{number} is a prime number."
   else
     puts "#{number} is not prime."
