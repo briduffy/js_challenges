@@ -127,17 +127,16 @@
 
 #Prime Number Checker
 #
-
-require 'prime'
-
-def primeNumber
-  puts `clear`
-  puts 'PRIME NUMBER CHECKER: Enter a number!'
-  number = gets.strip.to_i
-  if Prime.prime?(number)
-    puts "#{number} is a prime number."
-  else
-    puts "#{number} is not prime."
-  end
-end
-primeNumber
+#require 'prime'
+#
+#def primeNumber
+#  puts `clear`
+#  puts 'PRIME NUMBER CHECKER: Enter a number!'
+#  number = gets.strip.to_i
+#  if Prime.prime?(number)
+#    puts "#{number} is a prime number."
+#  else
+#    puts "#{number} is not prime."
+#  end
+#end
+#primeNumber

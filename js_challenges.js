@@ -142,3 +142,19 @@ console.log(string_chop('Climb more. ', 4))
 //["Cl", "im", "b ", "mo", "re", ". "]
 //["Cli", "mb ", "mor", "e. "]
 //["Clim", "b mo", "re. "]
+
+
+//Prime Number Checker
+function primeNumber(number) {
+  for (var i = 2; i < number; i++)
+    if (number % i === 0)
+      { return 'Not prime.'
+    } else {
+        return 'That is prime'
+}}
+
+console.log(primeNumber(7))
+console.log(primeNumber(12))
+//Returns
+//"That is prime"
+//"Not prime."
