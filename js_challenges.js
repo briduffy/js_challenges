@@ -32,7 +32,7 @@ function swap(array, a, z) {
   array[z] = start
 }
 
-function bubbleSort(array){
+function bubble_sort(array){
   for (var a = 0; a < array.length; a++) {
     for (var z = 1; z < array.length; z++) {
       if (array[z - 1] > array[z]) {
@@ -43,7 +43,7 @@ function bubbleSort(array){
   return array
 }
 
-console.log(bubbleSort(array.slice()))
+console.log(bubble_sort(array.slice()))
 //Returns [2, 3, 11, 26, 44, 88, 99, 123, 789, 1105]
 
 //Condtional Statement -- Largest of 5 Numbers with an Alert Box
@@ -158,3 +158,14 @@ console.log(primeNumber(12))
 //Returns
 //"That is prime"
 //"Not prime."
+
+
+//Vowel Count
+function vowel_count(string) {
+  string = string.toLowerCase()
+  var vowels = string.match(/[aeiou]/gi)
+  return vowels.length
+}
+console.log(vowel_count("DevPoint Labs is AWESOME."))
+//Returns
+//9
