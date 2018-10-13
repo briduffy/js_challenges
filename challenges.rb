@@ -140,3 +140,12 @@
 #  end
 #end
 #primeNumber
+
+
+#Capitalize First Letter
+#
+def capitalLetter(string)
+  capitalize = string.split(' ').map(&:capitalize).join(' ')
+end
+
+puts capitalLetter('donald trump is a moron.')
