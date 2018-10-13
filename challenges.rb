@@ -144,8 +144,33 @@
 
 #Capitalize First Letter
 #
-def capitalLetter(string)
-  capitalize = string.split(' ').map(&:capitalize).join(' ')
-end
+#def capitalLetter(string)
+#  capitalize = string.split(' ').map(&:capitalize).join(' ')
+#end
+#puts capitalLetter('donald trump is a moron.')
 
-puts capitalLetter('donald trump is a moron.')
+
+#Coin Converter
+#
+def coinConvert(number)
+  coin = []
+
+   quarters = (number/25).to_i
+   coin << quarters
+   number = number - (quarters * 25)
+  
+   dimes = (number/10).to_i
+   coin << dimes
+   number = number - (dimes * 10)
+
+   nickels = (number/5).to_i
+   coin << nickels
+   number = number - (nickels * 5)
+
+   pennies = (number/1).to_i
+   coin << pennies
+   number = number - (pennies * 1)
+
+  puts coin 
+ end
+ puts coinConvert(76)
