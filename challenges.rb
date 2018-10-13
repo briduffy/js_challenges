@@ -152,25 +152,25 @@
 
 #Coin Converter
 #
-def coinConvert(number)
-  coin = []
-
-   quarters = (number/25).to_i
-   coin << quarters
-   number = number - (quarters * 25)
-  
-   dimes = (number/10).to_i
-   coin << dimes
-   number = number - (dimes * 10)
-
-   nickels = (number/5).to_i
-   coin << nickels
-   number = number - (nickels * 5)
-
-   pennies = (number/1).to_i
-   coin << pennies
-   number = number - (pennies * 1)
-
-  puts coin 
- end
- puts coinConvert(76)
+#def coinConvert(number)
+#  coin = []
+#
+#  quarters = (number/25).to_i
+#  coin << quarters
+#  number = number - (quarters * 25)
+#
+#  dimes = (number/10).to_i
+#  coin << dimes
+#  number = number - (dimes * 10)
+#
+#  nickels = (number/5).to_i
+#  coin << nickels
+#  number = number - (nickels * 5)
+#
+#  pennies = (number/1).to_i
+#  coin << pennies
+#  number = number - (pennies * 1)
+#
+#  puts coin 
+#end
+#puts coinConvert(76)
