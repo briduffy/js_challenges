@@ -174,3 +174,15 @@
 #  puts coin 
 #end
 #puts coinConvert(76)
+
+
+#Temperature Conversion
+#
+def toF(c)
+  c * 9 / 5 + 32
+end
+
+puts `clear`
+puts 'Enter a temperature in celcius.'
+c = gets.to_f
+puts "#{c} celcius is equal to #{toF(c)} degrees fahrenheit." 
