@@ -178,11 +178,20 @@
 
 #Temperature Conversion
 #
-def toF(c)
-  c * 9 / 5 + 32
-end
+#def toF(c)
+#  c * 9 / 5 + 32
+#end
+#
+#puts `clear`
+#puts "Enter a temperature in celcius.""
+#c = gets.to_f
+#puts "#{c} degrees celcius is equal to #{toF(c)} degrees fahrenheit." 
 
+def toC(f)
+  x = f - 32
+  y = x * 5 / 9
+end
 puts `clear`
-puts 'Enter a temperature in celcius.'
-c = gets.to_f
-puts "#{c} celcius is equal to #{toF(c)} degrees fahrenheit." 
+puts "Enter a temperature in fahrenheit."
+y = gets.to_f
+puts "#{y} degrees fahrenheit is equal to #{toC(y)} degrees celcius."
