@@ -203,3 +203,15 @@
 #end
 #puts reverse('Brianne')
 #Returns 'ennairb'
+
+
+#Add spaces to a string at every space for X # of spaces
+#
+def spaces(string, spaces = 0)
+  spaces.times do 
+    string = string.split('').join(' ')
+  end
+  return str
+end
+puts spacify('brianne', 2)
+#Returns 'b   r   i   a   n   n   e'
