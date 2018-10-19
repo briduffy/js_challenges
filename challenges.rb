@@ -195,6 +195,7 @@
 #puts "Enter a temperature in fahrenheit."
 #y = gets.to_f
 #puts "#{y} degrees fahrenheit is equal to #{toC(y)} degrees celcius."
+#Returns '68 degrees fahrenheit is equal to 20 degrees celcius."
 
 
 #Reverse String
@@ -207,11 +208,24 @@
 
 #Add spaces to a string at every space for X # of spaces
 #
-def spaces(string, spaces = 0)
-  spaces.times do 
-    string = string.split('').join(' ')
-  end
-  return str
-end
-puts spacify('brianne', 2)
+#def spaces(string, spaces = 0)
+#  spaces.times do 
+#    string = string.split('').join(' ')
+#  end
+#  return str
+#end
+#puts spacify('brianne', 2)
 #Returns 'b   r   i   a   n   n   e'
+
+
+#Paragraph Sort -- take in a string and return a sorted hash.
+#
+#def paragaph(string)
+#   hash = Hash.new(0)
+#   words = string.downcase.gsub /[^a-z0-9 ]+/i, ''
+#   words.split.each { |i| hash[i] = hash[i] + 1 }
+#   sorted = hash.sort_by {|k, v| [-v, k]}
+#   sorted.to_h
+# end
+# puts paragaph("Dan Actor is a man, but is not actually an actor. Though, he is Dan and Dan is the man.")
+#Returns {"is"=>4, "dan"=>3, "actor"=>2, "man"=>2, "a"=>1, "actually"=>1, "an"=>1, "and"=>1, "but"=>1, "he"=>1, "not"=>1, "the"=>1, "though"=>1}
