@@ -169,3 +169,26 @@ function vowel_count(string) {
 console.log(vowel_count("DevPoint Labs is AWESOME."))
 //Returns
 //9
+
+
+//Greatest Common Divisor Between Mutilple Numbers					
+let arr = [12, 36, 72]
+let maxNum = Math.max(...arr)
+						
+function greatest(arr){    			
+    arr.forEach(function (arrNum){
+        if (maxNum === 0){
+            return 1
+        }
+	if (arrNum % maxNum === 0) { 
+	  return maxNum
+	}
+        maxNum--
+        greatest()
+    })
+    return maxNum
+}
+console.log (greatest())
+//Returns
+//12
+
