@@ -192,3 +192,20 @@ console.log (greatest())
 //Returns
 //12
 
+
+//Factorial
+function factorial(num) {
+  var result = num
+  if (num === 0 || num === 1)
+    return 1
+  while (num > 1) {
+    num--
+  result = result * num
+ }
+  return result
+}
+console.log(factorial(7))
+console.log(factorial(4))
+//Returns
+//5040
+//24
