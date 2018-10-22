@@ -229,3 +229,20 @@
 # end
 # puts paragaph("Dan Actor is a man, but is not actually an actor. Though, he is Dan and Dan is the man.")
 #Returns {"is"=>4, "dan"=>3, "actor"=>2, "man"=>2, "a"=>1, "actually"=>1, "an"=>1, "and"=>1, "but"=>1, "he"=>1, "not"=>1, "the"=>1, "though"=>1}
+
+
+#Return the first unique character
+def uniqueCharacter(str)
+  start = []
+  arr = str.split("").sort
+  arr.each_index do |x|
+    if (arr[x] != arr[x +1] && arr[x] != arr[x -1])
+      start << arr[x]
+    end
+  end
+  puts 'The first unique character is...'
+  return start[0]
+end
+
+puts uniqueCharacter("pumpkinapplespice")
+#Returns 'a'
