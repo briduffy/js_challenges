@@ -150,7 +150,7 @@ function primeNumber(number) {
     if (number % i === 0)
       { return 'Not prime.'
     } else {
-        return 'That is prime'
+        return 'That is prime.'
 }}
 
 console.log(primeNumber(7))
@@ -219,3 +219,16 @@ function vowelCount(string) {
 console.log(("My name is Brianne Duffy."))
 //Returns
 //7
+
+//Palindrome
+function palindrome(string) {
+  var word = string.toLowerCase().replace(/\s/g, '')
+  var check = word.split("").reverse("").join("")
+  if (word === check)
+    return "That is a palindrome."
+  else
+    return "That is not a palindrome."   
+}
+console.log(palindrome("racecar"))
+//Returns
+//"That is a palindrome."
