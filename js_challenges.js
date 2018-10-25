@@ -209,3 +209,13 @@ console.log(factorial(4))
 //Returns
 //5040
 //24
+
+
+//Vowel Counter
+function vowelCount(string) {
+  var v = string.match(/[aeiou]/gi)
+  return v === null ? 0 : v.length
+}
+console.log(("My name is Brianne Duffy."))
+//Returns
+//7
