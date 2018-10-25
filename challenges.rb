@@ -231,18 +231,32 @@
 #Returns {"is"=>4, "dan"=>3, "actor"=>2, "man"=>2, "a"=>1, "actually"=>1, "an"=>1, "and"=>1, "but"=>1, "he"=>1, "not"=>1, "the"=>1, "though"=>1}
 
 
-#Return the first unique character
-def uniqueCharacter(str)
-  start = []
-  arr = str.split("").sort
-  arr.each_index do |x|
-    if (arr[x] != arr[x +1] && arr[x] != arr[x -1])
-      start << arr[x]
-    end
-  end
-  puts 'The first unique character is...'
-  return start[0]
-end
+# #Return the first unique character
+# def uniqueCharacter(str)
+#   start = []
+#   arr = str.split("").sort
+#   arr.each_index do |x|
+#     if (arr[x] != arr[x +1] && arr[x] != arr[x -1])
+#       start << arr[x]
+#     end
+#   end
+#   puts 'The first unique character is...'
+#   return start[0]
+# end
 
-puts uniqueCharacter("pumpkinapplespice")
-#Returns 'a'
+# puts uniqueCharacter("pumpkinapplespice")
+# #Returns 'a'
+
+
+def max_min(array)
+  return [nil, nil] if array.empty?
+  min = (2 ** (0.size * 8 - 2) - 1)
+  max = -(2 ** (0.size * 8 - 2))
+  array.each do |i|
+    min = i if i < min
+    max = i if i > max
+  end
+  puts "#{max} is the highest number in the array."
+  puts "#{min} is the lowest number in the array."
+end
+puts max_min([99, 33, 44, 22, 11, 88, 77, -11])
