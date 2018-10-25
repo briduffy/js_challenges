@@ -187,6 +187,7 @@
 #c = gets.to_f
 #puts "#{c} degrees celcius is equal to #{toF(c)} degrees fahrenheit." 
 #
+#
 #def toC(f)
 #  x = f - 32
 #  y = x * 5 / 9
@@ -195,6 +196,7 @@
 #puts "Enter a temperature in fahrenheit."
 #y = gets.to_f
 #puts "#{y} degrees fahrenheit is equal to #{toC(y)} degrees celcius."
+#
 #Returns '68 degrees fahrenheit is equal to 20 degrees celcius."
 
 
@@ -203,6 +205,7 @@
 #  str.downcase.split('').reverse.join('')
 #end
 #puts reverse('Brianne')
+#
 #Returns 'ennairb'
 
 
@@ -215,6 +218,7 @@
 #  return str
 #end
 #puts spacify('brianne', 2)
+#
 #Returns 'b   r   i   a   n   n   e'
 
 
@@ -228,10 +232,11 @@
 #   sorted.to_h
 # end
 # puts paragaph("Dan Actor is a man, but is not actually an actor. Though, he is Dan and Dan is the man.")
+#
 #Returns {"is"=>4, "dan"=>3, "actor"=>2, "man"=>2, "a"=>1, "actually"=>1, "an"=>1, "and"=>1, "but"=>1, "he"=>1, "not"=>1, "the"=>1, "though"=>1}
 
 
-# #Return the first unique character
+# Return the first unique character
 # def uniqueCharacter(str)
 #   start = []
 #   arr = str.split("").sort
@@ -243,20 +248,39 @@
 #   puts 'The first unique character is...'
 #   return start[0]
 # end
-
 # puts uniqueCharacter("pumpkinapplespice")
+#
 # #Returns 'a'
 
 
-def max_min(array)
-  return [nil, nil] if array.empty?
-  min = (2 ** (0.size * 8 - 2) - 1)
-  max = -(2 ** (0.size * 8 - 2))
-  array.each do |i|
-    min = i if i < min
-    max = i if i > max
-  end
-  puts "#{max} is the highest number in the array."
-  puts "#{min} is the lowest number in the array."
-end
-puts max_min([99, 33, 44, 22, 11, 88, 77, -11])
+# Min and Max number without helpers
+# def max_min(array)
+#   return [nil, nil] if array.empty?
+#   min = (2 ** (0.size * 8 - 2) - 1)
+#   max = -(2 ** (0.size * 8 - 2))
+#   array.each do |i|
+#     min = i if i < min
+#     max = i if i > max
+#   end
+#   puts "#{max} is the highest number in the array."
+#   puts "#{min} is the lowest number in the array."
+# end
+# puts max_min([99, 33, 44, 22, 11, 88, 77, -11])
+#
+# Returns
+# 99 is the highest number in the array.
+# -11 is the lowest number in the array.
+
+
+
+# Second highest and lowest numbers in an array using sort.
+# def second_min_max(array)
+#   sort = array.sort
+#   puts "The second highest number is #{sort[-2]}."
+#   puts "The second lowest number is #{sort[1]}."
+# end
+# second_min_max([99, 33, 44, 22, 11, 88, 77, -11])
+
+# # Returns
+# The second highest number is 88.
+# The second lowest number is 11.
