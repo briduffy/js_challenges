@@ -211,7 +211,7 @@ console.log(factorial(4))
 //24
 
 
-//Vowel Counter
+//Second Vowel Counter? Opps.
 function vowelCount(string) {
   var v = string.match(/[aeiou]/gi)
   return v === null ? 0 : v.length
@@ -232,3 +232,14 @@ function palindrome(string) {
 console.log(palindrome("racecar"))
 //Returns
 //"That is a palindrome."
+
+
+//Fibonacci Sequence
+function fibonacci(num) {
+  if (num <= 1)
+    return 1
+  else 
+    return fibonacci(num - 1) + fibonacci(num - 2)
+}
+console.log(fibonacci(6))
+//Returns 13
