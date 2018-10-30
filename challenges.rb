@@ -284,3 +284,23 @@
 # # Returns
 # The second highest number is 88.
 # The second lowest number is 11.
+
+#Paragraph Sort to a hash in order of occurances.
+def paragraph_sort(string, order = 'asc')
+	paragraph = string.downcase.split(/\W/)
+
+	words = {}
+
+	paragraph.each do |word|
+		next if(word == '')
+
+		if (words[word])
+			words[word] += 1
+		else
+			words[word] = 1
+		end
+	end
+
+	words.sort_by { |key, val| order == 'asc' ? val : -val }.to_h
+end
+puts paragraph_sort('I love my puppy Lucy so much. Everything about Lucy is so cute and so perfect. Lucy is a springer spaniel.', 'desc')
