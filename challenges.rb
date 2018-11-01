@@ -308,11 +308,24 @@
 # Returns {"so"=>3, "lucy"=>3, "is"=>2, "puppy"=>1, "much"=>1, "everything"=>1, "about"=>1, "cute"=>1, "and"=>1, "perfect"=>1, "a"=>1, "springer"=>1, "i"=>1, "spaniel"=>1, "love"=>1, "my"=>1}
 
 
-#Upper Case
-def upper_case(string)
-  upper = string.split.map(&:capitalize).join(' ')
-  puts upper
+# #Upper Case
+# def upper_case(string)
+#   upper = string.split.map(&:capitalize).join(' ')
+#   puts upper
+# end
+# upper_case('my name is brianne.')
+# #Returns
+# #My Name Is Brianne.
+
+
+# Odd and Even 1-15
+def odd_even(number)
+  (number).each do |i|
+    if i % 2 == 0
+      puts "#{i} is even."
+    else
+      puts "#{i} is odd."
+    end
+  end
 end
-upper_case('my name is brianne.')
-#Returns
-#My Name Is Brianne.
+odd_even(1..15)
