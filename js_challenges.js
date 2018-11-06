@@ -281,3 +281,27 @@ console.log(humanize(3))
 //1st
 //2nd
 //3rd
+
+
+//Text Truncation
+textTruncate = function(str, length, ending) {
+  if (length == null) {
+    length = 100
+  }
+  if (ending == null) {
+    ending = '...'
+  }
+  if (str.length > length) {
+    return str.substring(0, length - ending.length) + ending
+  } else {
+    return str
+  }
+}
+console.log(textTruncate('My name is Brianne.'))
+console.log(textTruncate('My name is Brianne.', 9))
+console.log(textTruncate('My name is Brianne.', 15,':)'))
+// Returns
+// "My name is Brianne."
+// "My nam..."
+// "My name is Br:)"
+
