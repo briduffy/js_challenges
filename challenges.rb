@@ -286,26 +286,26 @@
 # The second lowest number is 11.
 
 
-# Paragraph Sort to a hash in order of occurances.
-# def paragraph_sort(string, order = 'asc')
-# 	paragraph = string.downcase.split(/\W/)
+#Paragraph Sort to a hash in order of occurances.
+def paragraph_sort(string, order = 'asc')
+	paragraph = string.downcase.split(/\W/)
 
-# 	words = {}
+	words = {}
 
-# 	paragraph.each do |word|
-# 		next if(word == '')
+	paragraph.each do |word|
+		next if(word == '')
 
-# 		if (words[word])
-# 			words[word] += 1
-# 		else
-# 			words[word] = 1
-# 		end
-# 	end
+		if (words[word])
+			words[word] += 1
+		else
+			words[word] = 1
+		end
+	end
 
-# 	words.sort_by { |key, val| order == 'asc' ? val : -val }.to_h
-# end
-# puts paragraph_sort('I love my puppy Lucy so much. Everything about Lucy is so cute and so perfect. Lucy is a springer spaniel.', 'desc')
-# Returns {"so"=>3, "lucy"=>3, "is"=>2, "puppy"=>1, "much"=>1, "everything"=>1, "about"=>1, "cute"=>1, "and"=>1, "perfect"=>1, "a"=>1, "springer"=>1, "i"=>1, "spaniel"=>1, "love"=>1, "my"=>1}
+	words.sort_by { |key, val| order == 'asc' ? val : -val }.to_h
+end
+puts paragraph_sort('I love my puppy Lucy so much. Everything about Lucy is so cute and so perfect. Lucy is a springer spaniel.', 'desc')
+#Returns {"so"=>3, "lucy"=>3, "is"=>2, "puppy"=>1, "much"=>1, "everything"=>1, "about"=>1, "cute"=>1, "and"=>1, "perfect"=>1, "a"=>1, "springer"=>1, "i"=>1, "spaniel"=>1, "love"=>1, "my"=>1}
 
 
 # #Upper Case
@@ -318,14 +318,14 @@
 # #My Name Is Brianne.
 
 
-# Odd and Even 1-15
-def odd_even(number)
-  (number).each do |i|
-    if i % 2 == 0
-      puts "#{i} is even."
-    else
-      puts "#{i} is odd."
-    end
-  end
-end
-odd_even(1..15)
+# # Odd and Even 1-15
+# def odd_even(number)
+#   (number).each do |i|
+#     if i % 2 == 0
+#       puts "#{i} is even."
+#     else
+#       puts "#{i} is odd."
+#     end
+#   end
+# end
+# odd_even(1..15)

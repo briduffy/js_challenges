@@ -260,3 +260,24 @@ console.log(romanize(2018))
 //Returns
 //"MMXVIII"
 
+
+//Humanize
+function humanize(number) {
+  if(number % 100 >= 11 && number % 100 <= 13)
+      return number + "th"
+  
+  switch(number % 10) {
+      case 1: return number + "st"
+      case 2: return number + "nd"
+      case 3: return number + "rd"
+  }
+  
+  return number + "th";
+}
+console.log(humanize(1))
+console.log(humanize(2))
+console.log(humanize(3))
+//Returns
+//1st
+//2nd
+//3rd
